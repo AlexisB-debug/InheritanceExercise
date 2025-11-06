@@ -19,21 +19,47 @@ namespace Inheritance
             // Create a class Reptile
             // give this class 4 members that are specific to Reptile
             // Set this class to inherit from your Animal Class
-
-
-
-
+            
             /*Create an object of your Bird class
              *  give values to your members using the object of your Bird class
-             *  
-             * Creatively display the class member values 
+             *
+             * Creatively display the class member values
              */
 
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
-             *  
-             * Creatively display the class member values 
+             *
+             * Creatively display the class member values
              */
+            
+            string[] pterodactylTaxonomy = new string[]
+            {
+                "Animalia", "Chordata", "Sauropsida", "Pterosauria", "Pterodactylidae", "Pterodactylus",
+                "Pterodactylus antiquus"
+            };
+            Bird pterodactyl = new Bird()
+            {
+                CommonName = "Pterodactyl", ScientificName = "Pterodactylus antiquus",
+                TaxonomyRank = pterodactylTaxonomy, Extinct = true, Hatching = "precocial", Nest = "Burial",
+                Flight = "Soar & Dive", WingspanInches = 60
+            };
+
+            string[] greenTreeSkinkTaxonomy = new string[]
+            {
+                "Animalia", "Chordata", "Reptilia", "Ssquamata", "Scincidae", "Prasinohaema",
+                "Prasinohaema scurrula"
+            };
+            Reptile greenTreeSkink = new Reptile()
+            {
+                CommonName = "Green Tree Skink", ScientificName = "Prasinohaema virens",
+                TaxonomyRank = greenTreeSkinkTaxonomy, Extinct = false, Scale = "cycloid", VenomousPoisonous = false,
+                BloodColor = "vivid green", FairytaleMythology = false
+            };
+
+            JournalOfCharles journalLoneInstance = new JournalOfCharles();
+            journalLoneInstance.SecretsOfEden();
+            journalLoneInstance.fowlOfTheSky.Add(pterodactyl);
+            journalLoneInstance.beastOfTheEarth.Add(greenTreeSkink);
         }
     }
 }
