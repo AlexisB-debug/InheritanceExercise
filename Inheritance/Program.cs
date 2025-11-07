@@ -60,10 +60,10 @@ namespace Inheritance
                 BloodColor = "vivid green", FairytaleMythology = false
             };
             
-            JournalOfCharles journalLoneInstance = new JournalOfCharles();
-            journalLoneInstance.birds.Add(pterodactyl);
-            journalLoneInstance.reptiles.Add(greenTreeSkink);
-            journalLoneInstance.SecretsOfEden();
+            pterodactyl.birds.Add(pterodactyl);
+            pterodactyl.SecretsOfEden();
+            greenTreeSkink.reptiles.Add(greenTreeSkink);
+            greenTreeSkink.SecretsOfEden();
         }
     }
 }
