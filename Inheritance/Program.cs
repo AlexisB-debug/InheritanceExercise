@@ -44,8 +44,8 @@ namespace Inheritance
             Bird pterodactyl = new Bird()
             {
                 CommonName = "Pterodactyl", ScientificName = "Pterodactylus antiquus",
-                TaxonomyRank = pterodactylTaxonomy, Extinct = true, Hatching = "precocial", Nest = "Burial",
-                Flight = "Soar & Dive", WingspanInches = 60
+                TaxonomyRank = pterodactylTaxonomy, Extinct = true, Hatching = "precocial", Nest = "burial",
+                Flight = "soar & dive", WingspanInches = 60
             };
 
             string[] greenTreeSkinkTaxonomy = new string[]
@@ -60,10 +60,10 @@ namespace Inheritance
                 BloodColor = "vivid green", FairytaleMythology = false
             };
             
-            pterodactyl.birds.Add(pterodactyl);
-            pterodactyl.SecretsOfEden();
-            greenTreeSkink.reptiles.Add(greenTreeSkink);
-            greenTreeSkink.SecretsOfEden();
+            JournalOfCharles journalLoneInstance = new JournalOfCharles();
+            journalLoneInstance.birds.Add(pterodactyl);
+            journalLoneInstance.reptiles.Add(greenTreeSkink);
+            journalLoneInstance.SecretsOfEden();
         }
     }
 }
