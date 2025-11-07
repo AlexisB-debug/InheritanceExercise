@@ -15,6 +15,20 @@ public class Bird : Animal
         TaxonomyRank = [];
         Extinct = true;
     }
+    
+    public List<Bird> birds = new List<Bird>();
+
+    public void SecretsOfEden()
+    {
+        foreach (Bird bird in birds)
+        {
+            Console.WriteLine($"Common Name: {bird.CommonName}\nScientificName: {bird.ScientificName}\nExtinct: {bird.Extinct}\nHatching: {bird.Hatching}\nNest: {bird.Nest}\nFlight: {bird.Flight}\nWingspan in inches: {bird.WingspanInches}\nTaxonomyRank:");
+            foreach (string rank in bird.TaxonomyRank)
+            {
+                Console.WriteLine(rank);
+            }
+        }
+    }
 
     public string Hatching { get; set; } // "altricial" or "precocial"
     public string Nest { get; set; } // "scrape nest", "cup nests", "cavity nests", "platform nest", "mound nest", "hanging or pendant nest", "holding eggs at feet"

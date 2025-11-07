@@ -39,7 +39,7 @@ namespace Inheritance
             string[] pterodactylTaxonomy = new string[]
             {
                 "Animalia", "Chordata", "Sauropsida", "Pterosauria", "Pterodactylidae", "Pterodactylus",
-                "Pterodactylus antiquus"
+                "antiquus"
             };
             Bird pterodactyl = new Bird()
             {
@@ -51,7 +51,7 @@ namespace Inheritance
             string[] greenTreeSkinkTaxonomy = new string[]
             {
                 "Animalia", "Chordata", "Reptilia", "Ssquamata", "Scincidae", "Prasinohaema",
-                "Prasinohaema scurrula"
+                "scurrula"
             };
             Reptile greenTreeSkink = new Reptile()
             {
@@ -59,11 +59,11 @@ namespace Inheritance
                 TaxonomyRank = greenTreeSkinkTaxonomy, Extinct = false, Scale = "cycloid", VenomousPoisonous = false,
                 BloodColor = "vivid green", FairytaleMythology = false
             };
-
-            JournalOfCharles journalLoneInstance = new JournalOfCharles();
-            journalLoneInstance.SecretsOfEden();
-            journalLoneInstance.fowlOfTheSky.Add(pterodactyl);
-            journalLoneInstance.beastOfTheEarth.Add(greenTreeSkink);
+            
+            pterodactyl.birds.Add(pterodactyl);
+            pterodactyl.SecretsOfEden();
+            greenTreeSkink.reptiles.Add(greenTreeSkink);
+            greenTreeSkink.SecretsOfEden();
         }
     }
 }
