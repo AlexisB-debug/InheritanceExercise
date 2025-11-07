@@ -1,5 +1,9 @@
 ﻿using System;
-
+using System.Collections.Generic;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml;
+using System.Linq;
 namespace Inheritance
 {
     class Program
@@ -51,7 +55,7 @@ namespace Inheritance
             };
             Reptile greenTreeSkink = new Reptile()
             {
-                CommonName = "Green Tree Skink", ScientificName = "Prasinohaema virens",
+                CommonName = "Green Tree Skink", ScientificName = "Prasinohaema scurrula",
                 TaxonomyRank = greenTreeSkinkTaxonomy, Extinct = false, Scale = "cycloid", VenomousPoisonous = false,
                 BloodColor = "vivid green", FairytaleMythology = false
             };

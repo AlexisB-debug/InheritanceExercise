@@ -1,10 +1,13 @@
 using System;
 using System.Collections.Generic;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml;
+using System.Linq;
 namespace Inheritance;
 
 public class JournalOfCharles
 {
-
     public List<Bird> fowlOfTheSky = new List<Bird>();
     public List<Reptile> beastOfTheEarth  = new List<Reptile>();
     public void SecretsOfEden()
